@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="6.9.3" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="167935" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="45510,7921202546" ReportOptions.Description.Text="" ReportOptions.LastChange="45510,8559361921" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxDBDataset3" DataSetName="orcamento"/>
+    <item DataSet="frxDBDataset2" DataSetName="itens"/>
+    <item DataSet="frxDBDataset1" DataSetName="empresa"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" HGuides.Text="" VGuides.Text="" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" HGuides.Text="" VGuides.Text="" PaperWidth="215,9" PaperHeight="279,4" PaperSize="1" LeftMargin="5" RightMargin="5" TopMargin="2" BottomMargin="2" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0">
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="71,81107" Left="0" Top="18,89765" Width="778,205227">
+      <TfrxMemoView Name="Memo1" AllowVectorExport="True" Left="0" Top="0" Width="778,205227" Height="52,91342" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="CLIENTE: [orcamento.&#34;NOMECLIENTE&#34;]&#13;&#10;CPF / CNPJ: [orcamento.&#34;CPF&#34;] / [orcamento.&#34;CNPJ&#34;]&#13;&#10;TELEFONE: [orcamento.&#34;TELEFONE&#34;] / [orcamento.&#34;CELULAR&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo2" AllowVectorExport="True" Left="0" Top="52,91342" Width="64,25201" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="11" ParentFont="False" Text="Cód. Item"/>
+      <TfrxMemoView Name="Memo3" AllowVectorExport="True" Left="64,25201" Top="52,91342" Width="362,83488" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="10" ParentFont="False" Text="Produto / Serviço"/>
+      <TfrxMemoView Name="Memo4" AllowVectorExport="True" Left="566,9295" Top="52,91342" Width="90,70872" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="10" HAlign="haCenter" ParentFont="False" Text="Quantidade"/>
+      <TfrxMemoView Name="Memo6" AllowVectorExport="True" Left="427,08689" Top="52,91342" Width="139,84261" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="10" HAlign="haCenter" ParentFont="False" Text="Valor Custo"/>
+      <TfrxMemoView Name="Memo9" AllowVectorExport="True" Left="656,85869" Top="52,91342" Width="120,94489898" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="10" HAlign="haRight" ParentFont="False" Text="Total"/>
+    </TfrxHeader>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="18,89765" Left="0" Top="113,3859" Width="778,205227" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset2" DataSetName="itens" RowCount="0">
+      <TfrxMemoView Name="itensCODITEM" IndexTag="1" AllowVectorExport="True" Left="0" Top="0" Width="64,25201" Height="18,89765" DataField="CODITEM" DataSet="frxDBDataset2" DataSetName="itens" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="11" HAlign="haCenter" ParentFont="False" Text="[itens.&#34;CODITEM&#34;]"/>
+      <TfrxMemoView Name="Memo7" IndexTag="1" AllowVectorExport="True" Left="64,25201" Top="0" Width="362,83488" Height="18,89765" DataField="PRODUTO" DataSet="frxDBDataset2" DataSetName="itens" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="10" ParentFont="False" Text="[itens.&#34;PRODUTO&#34;]"/>
+      <TfrxMemoView Name="itensQTDE" IndexTag="1" AllowVectorExport="True" Left="563,14997" Top="0" Width="94,48825" Height="18,89765" DataSet="frxDBDataset2" DataSetName="itens" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="10" HAlign="haCenter" ParentFont="False" Text="[itens.&#34;QTDE&#34;] [itens.&#34;UN&#34;]"/>
+      <TfrxMemoView Name="Memo10" IndexTag="1" AllowVectorExport="True" Left="656,85869" Top="0" Width="120,94489898" Height="18,89765" DataField="TOTALCUSTO" DataSet="frxDBDataset2" DataSetName="itens" DisplayFormat.DecimalSeparator="," DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="10" HAlign="haRight" ParentFont="False" Text="[itens.&#34;TOTALCUSTO&#34;]"/>
+      <TfrxMemoView Name="Memo19" IndexTag="1" AllowVectorExport="True" Left="427,08689" Top="0" Width="139,84261" Height="18,89765" DataField="PRECOCUSTO" DataSet="frxDBDataset2" DataSetName="itens" DisplayFormat.DecimalSeparator="," DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="10" HAlign="haCenter" ParentFont="False" Text="[itens.&#34;PRECOCUSTO&#34;]"/>
+    </TfrxMasterData>
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="79,37013" Left="0" Top="154,96073" Width="778,205227">
+      <TfrxMemoView Name="Memo14" AllowVectorExport="True" Left="540,47279" Top="52,91342" Width="234,33086" Height="18,89765" DisplayFormat.DecimalSeparator="," DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="11" ParentFont="False" Text="Total Orçamento: [orcamento.&#34;VALORTOTAL&#34;]"/>
+      <TfrxMemoView Name="Memo15" AllowVectorExport="True" Left="3,5905535" Top="3,77953" Width="249,44898" Height="18,89765" Frame.Typ="0" Text="Orçamento válido até [orcamento.&#34;DATAVENCIMENTO&#34;]"/>
+      <TfrxMemoView Name="Memo20" AllowVectorExport="True" Left="540,47279" Top="34,01577" Width="234,33086" Height="18,89765" DisplayFormat.DecimalSeparator="," DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="Total Custo: [SUM(&#60;itens.&#34;TOTALCUSTO&#34;&#62;,MasterData1)]"/>
+    </TfrxFooter>
+  </TfrxReportPage>
+</TfrxReport>
